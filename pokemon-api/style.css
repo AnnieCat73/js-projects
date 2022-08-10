@@ -1,0 +1,13 @@
+body {
+  background-color: rgb(172, 177, 218);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.pokemon {
+  background-color: #fff;
+  padding: 1em;
+  border: 1.5em solid yellow;
+}

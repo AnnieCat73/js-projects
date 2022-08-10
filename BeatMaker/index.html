@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Beatmaker</title>
+</head>
+<body>
+  <div class="sequencer">
+    <div class="kick-track">
+      <div class="controls">
+        <h1>Kick</h1>
+        <button data-track="0" class="mute kick-volume"><!--mute button with track no 0 i.e 1-->
+          <i class="fa-solid fa-volume-xmark"></i>
+        </button>
+        <select name="kick-select" id="kick-select"><!--select menu with these options-->
+          <option value="./sounds/kick-classic.wav">Classic Kick</option>
+          <option value="./sounds/kick-808.wav">808 Kick</option>
+          <option value="./sounds/kick-heavy.wav">Kick Heavy</option>
+        </select>
+      </div>
+      <div class="kick">
+        <div class="pad kick-pad b0"></div><!--beat number 0 etc-->
+        <div class="pad kick-pad b1"></div>
+        <div class="pad kick-pad b2"></div>
+        <div class="pad kick-pad b3"></div>
+        <div class="pad kick-pad b4"></div>
+        <div class="pad kick-pad b5"></div>
+        <div class="pad kick-pad b6"></div>
+        <div class="pad kick-pad b7"></div>
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="./script.js"></script>
+</body>
+</html>
