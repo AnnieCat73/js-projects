@@ -12,6 +12,59 @@
     ></script>
   </head>
   <body>
+    <div class="container">
+      <div class="music-player">
+        <div class="player">
+          <img src="images/record.jpg" alt="Record" class="record" />
+          <h2 id="title">Song Name</h2>
+          <div class="slidecontainer">
+            <i class="fas fa-volume-down"></i>
+            <input type="range" min="0" max="100" value="50" class="slider" />
+            <i class="fas fa-volume-up"></i>
+          </div>
+          <div class="controls">
+            <button class="previous" id="previous">
+              <i class="fas fa-step-backward"></i>
+              <button class="play-pause" id="play-pause">
+                <i class="fas fa-play"></i>
+              </button>
+            </button>
+            <button class="next" id="next">
+              <i class="fas fa-step-forward"></i>
+            </button>
+          </div>
+        </div>
+        <div class="playlist">
+          <h2>Playlist</h2>
+          <ul class="song-list">
+            <li
+              data-src="music/Petrocelli.MP3"
+              data-name="Petrocelli"
+              data-index="0"
+            >
+              <span>Petrocelli</span>
+              <span>03:40</span>
+            </li>
+            <li
+              data-src="music/Heavy Drinkers.MP3"
+              data-name="Petrocelli"
+              data-index="1"
+            >
+              <span>Heavy Drinkers</span>
+              <span>04:19</span>
+            </li>
+            <li
+              data-src="music/Our Roman Knows.mp3"
+              data-name="Our Roman Knows"
+              data-index="2"
+            >
+              <span>Our Roman Knows</span>
+              <span>04:16</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
