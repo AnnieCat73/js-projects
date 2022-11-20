@@ -11,3 +11,15 @@ let songArray = [];
 let songHeading = "";
 let songIndex = 0;
 let isPlaying = false;
+
+function loadAudio() {
+  audio.src = songArray[songIndex];
+  let songListItems = songList.getElementsByTagName("li");
+  songHeading = songListItems[songIndex].getAttribute("data-name");
+  title.innerText = songHeading;
+  //Highlight song title inside playlist
+  for (i = 0; i < songListItems.length; i++) {
+    songListItems[i].classList.remove("active");
+  }
+  songList.getElementsByTagName("li")[songIndex].classList.add("active");
+}
