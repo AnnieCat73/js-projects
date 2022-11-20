@@ -23,3 +23,13 @@ function loadAudio() {
   }
   songList.getElementsByTagName("li")[songIndex].classList.add("active");
 }
+
+function loadSongs() {
+  let songs = songList.getElementsByTagName("li");
+  for (i = 0; i < songs.length; i++) {
+    songArray.push(songs[i].getAttribute("data-src"));
+  }
+  loadAudio();
+}
+
+loadSongs();
