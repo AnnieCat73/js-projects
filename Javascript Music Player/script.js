@@ -31,5 +31,11 @@ function loadSongs() {
   }
   loadAudio();
 }
-
 loadSongs();
+
+function playAudio() {
+  audio.play();
+  playPauseBtn.querySelector("i.fas").classList.remove("fa-play");
+  playPauseBtn.querySelector("i.fas").classList.add("fa-pause");
+  isPlaying = true;
+}
