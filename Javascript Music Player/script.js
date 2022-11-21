@@ -40,3 +40,11 @@ function playAudio() {
   isPlaying = true;
   record.classList.add("record-animation");
 }
+
+function pauseAudio() {
+  audio.pause();
+  playPauseBtn.querySelector("i.fas").classList.remove("fa-pause");
+  playPauseBtn.querySelector("i.fas").classList.add("fa-play");
+  isPlaying = false;
+  record.classList.remove("record-animation");
+}
