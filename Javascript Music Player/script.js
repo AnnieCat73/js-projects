@@ -48,3 +48,24 @@ function pauseAudio() {
   isPlaying = false;
   record.classList.remove("record-animation");
 }
+
+function nextSong() {
+  songIndex++;
+  if (songIndex > songArray.length - 1) {
+    songIndex = 0;
+  }
+  loadAudio();
+  playAudio();
+}
+
+playPauseBtn.addEventListener(
+  "click",
+  function () {
+    if (isPlaying) {
+      pauseAudio();
+    } else {
+      playAudio();
+    }
+  },
+  false
+);
