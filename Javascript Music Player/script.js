@@ -68,3 +68,19 @@ playPauseBtn.addEventListener(
   },
   false
 );
+
+nextBtn.addEventListener(
+  "click",
+  function () {
+    nextSong();
+  },
+  false
+);
+
+preveBtn.addEventListener(
+  "click",
+  function () {
+    previousSong();
+  },
+  false
+);
