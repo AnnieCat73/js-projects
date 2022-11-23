@@ -102,3 +102,7 @@ songList.addEventListener(
   },
   false
 );
+
+audio.addEventListener("ended", function () {
+  nextSong();
+});
