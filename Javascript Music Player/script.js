@@ -92,3 +92,13 @@ preveBtn.addEventListener(
   },
   false
 );
+
+songList.addEventListener(
+  "click",
+  function (e) {
+    songIndex = e.target.closest("li").getAttribute("data-index");
+    loadAudio();
+    playAudio();
+  },
+  false
+);
