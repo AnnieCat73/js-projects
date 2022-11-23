@@ -56,6 +56,14 @@ function nextSong() {
   loadAudio();
   playAudio();
 }
+function previousSong() {
+  songIndex--;
+  if (songIndex > songArray.length - 1) {
+    songIndex = 0;
+  }
+  loadAudio();
+  playAudio();
+}
 
 playPauseBtn.addEventListener(
   "click",
