@@ -106,3 +106,11 @@ songList.addEventListener(
 audio.addEventListener("ended", function () {
   nextSong();
 });
+
+volSlider.addEventListener(
+  "input",
+  function () {
+    audio.volume = volSlider.value / 100;
+  },
+  false
+);
