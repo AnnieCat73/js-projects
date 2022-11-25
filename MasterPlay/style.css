@@ -62,7 +62,37 @@ body {
 .master-play .bar .bar2 {
   position: absolute;
   background: #36e2ec;
-  width: 20%;
+  width: 0%;
   height: 100%;
   top: 0;
+}
+.master-play .bar .dot {
+  width: 5px;
+  height: 5px;
+  background: #36e2ec;
+  border-radius: 50%;
+  left: 0%;
+  top: -1px;
+  transition: 1s linear;
+}
+.master-play .bar .dot::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #36e2ec;
+  border-radius: 50px;
+  left: -6px;
+  top: -6px;
+  box-shadow: inset 0px 0px 3px #36e2ec;
+}
+.master-play .bar input {
+  position: absolute;
+  width: 100%;
+  top: -6px;
+  left: 0;
+  cursor: pointer;
+  z-index: 9999999;
+  transition: 1s linear;
+  opacity: 0;
 }
