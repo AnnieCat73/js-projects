@@ -27,7 +27,8 @@ body {
 .master-play .icon{
   font-size: 20px;
   color: #fff;
-  margin: 0 20px 0px 40px;
+  margin: 0px 20px 0px 40px;
+  display: flex;/**/
 }
 .master-play .icon .bi{
   cursor: pointer;
@@ -39,4 +40,29 @@ body {
   padding: 1px 3px 0px 6px;
   margin: 0px 5px;
   transition: .3s linear;
+}
+
+.master-play span {
+  color: #fff;
+  width: 32px;
+  font-size: 11px;
+  font-weight: 400;
+}
+.master-play #currentStart {
+  margin: 0px 0px 0px 20px;
+}
+
+.master-play .bar {
+  position: relative;
+  width: 43%;
+  height: 2px;
+  background: rgb(105, 105, 170, .1);
+  margin: 0px 15px 0px 10px;
+}
+.master-play .bar .bar2 {
+  position: absolute;
+  background: #36e2ec;
+  width: 20%;
+  height: 100%;
+  top: 0;
 }
