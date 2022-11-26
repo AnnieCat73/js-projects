@@ -96,3 +96,28 @@ body {
   transition: 1s linear;
   opacity: 0;
 }
+.master-play .vol {
+  position: relative;
+  width: 100px;
+  height: 2px;
+  margin-left: 50px;
+  background: rgb(105, 105, 170, .1);
+}
+.master-play .vol .bi {
+  position: absolute;
+  color: #fff;
+  font-size: 25px;
+  top: -17px;
+  left: -30px;
+}
+
+.master-play .vol input {
+  position: absolute;
+  width: 100%;
+  top: -10px;
+  left: 0;
+  cursor: pointer;
+  z-index: 9999999;
+  transition: 1s linear;
+  opacity: 0;
+}
