@@ -13,6 +13,31 @@ masterPlay.addEventListener("click", () => {
     masterPlay.classList.remove("bi-pause-fill");
   }
 });
+
+let currentStart = document.getElementById("currentStart");
+let currentEnd = document.getElementById("currentEnd");
+
+music.addEventListener("timeupdate", () => {
+  let musicCurr = music.currentTime;
+  let musicDur = music.duration;
+
+  let min = Math.floor(musicDur / 60);
+  let sec = Math.floor(musicDur % 60);
+  if (sec < 10) {
+    sec = `0${sec}`;
+  }
+
+  currentEnd.innerText = `${min}:${sec}`;
+
+  let min1 = Math.floor(musicCurr / 60);
+  let sec1 = Math.floor(musicCurr % 60);
+  if (sec1 < 10) {
+    sec1 = `0${sec1}`;
+  }
+
+  currentStart.innerText = `${min1}:${sec1}`;
+});
+
 /*
 let masterPlay = document.getElementById("masterPlay");
 //let wave = document.getElementsByClassName("wave")[0];
