@@ -47,6 +47,15 @@ music.addEventListener("timeupdate", () => {
   dot.style.left = `${seekbar}%`;
 });
 
+seek.addEventListener("change", () => {
+  music.currentTime = (seek.value * music.duration) / 100;
+});
+
+music.addEventListener("ended", () => {
+  masterPlay.classList.add("bi-play-fill");
+  masterPlay.classList.remove("bi-pause-fill");
+});
+
 /*
 let masterPlay = document.getElementById("masterPlay");
 //let wave = document.getElementsByClassName("wave")[0];
