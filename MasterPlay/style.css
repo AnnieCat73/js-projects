@@ -65,6 +65,7 @@ body {
   width: 0%;
   height: 100%;
   top: 0;
+  transition: 1s linear;
 }
 .master-play .bar .dot {
   width: 5px;
@@ -129,6 +130,7 @@ body {
   width: 0%;
   height: 100%;
   top: 0;
+  transition: 1s linear;
 }
 .master-play .vol .dot {
   width: 5px;

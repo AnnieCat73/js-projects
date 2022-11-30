@@ -56,6 +56,34 @@ music.addEventListener("ended", () => {
   masterPlay.classList.remove("bi-pause-fill");
 });
 
+let volIcon = document.getElementById("vol-icon");
+let vol = document.getElementById("vol");
+let volDot = document.getElementById("vol-dot");
+let volBar = document.getElementsByClassName("vol-bar")[0];
+
+vol.addEventListener("change", () => {
+  if (vol.value == 0) {
+    volIcon.classList.remove("bi-volume-down-fill");
+    volIcon.classList.add("bi-volume-mute-fill");
+    volIcon.classList.remove("bi-volume-up-fill");
+  }
+  if (vol.value > 0) {
+    volIcon.classList.add("bi-volume-down-fill");
+    volIcon.classList.remove("bi-volume-mute-fill");
+    volIcon.classList.remove("bi-volume-up-fill");
+  }
+  if (vol.value > 50) {
+    volIcon.classList.remove("bi-volume-down-fill");
+    volIcon.classList.remove("bi-volume-mute-fill");
+    volIcon.classList.add("bi-volume-up-fill");
+  }
+
+  let volA = vol.value;
+  volBar.style.width = `${volA}%`;
+  volDot.style.left = `${volA}%`;
+  music.volume = volA / 100;
+});
+
 /*
 let masterPlay = document.getElementById("masterPlay");
 //let wave = document.getElementsByClassName("wave")[0];
