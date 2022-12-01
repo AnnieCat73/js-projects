@@ -17,10 +17,20 @@ body {
   display: flex;
   align-items: center;
   color: #fff;
+  width: 40%;
+ 
 }
 
+.master-title {
+  display: flex;
+  flex-direction: column;
+}
 
-.master-play h5 .subtitle{
+.master-title h4 {
+  font-size: 13px;
+}
+
+.master-play .subtitle{
   font-size: 11px;
   color: #4c5262;
 }
@@ -33,6 +43,11 @@ body {
 .master-play .icon .bi{
   cursor: pointer;
   outline: none;
+  border: 1px solid rgb(105, 105, 170, .1);
+  border-radius: 50%;
+  padding: 1px 3px 0px 6px;
+  margin: 0px 5px;
+  transition: .3s linear;
 }
 .master-play .icon .bi:nth-child(2){
   border: 1px solid rgb(105, 105, 170, .1);
