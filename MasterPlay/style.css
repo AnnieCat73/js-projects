@@ -83,6 +83,7 @@ body {
   transition: 1s linear;
 }
 .master-play .bar .dot {
+  position: absolute;
   width: 5px;
   height: 5px;
   background: #36e2ec;
@@ -109,7 +110,7 @@ body {
   left: 0;
   cursor: pointer;
   z-index: 9999999;
-  transition: 1s linear;
+  transition: 3s linear;/*1s also*/
   opacity: 0;
 }
 .master-play .vol {
@@ -134,8 +135,8 @@ body {
   top: -10px;
   left: 0;
   cursor: pointer;
-  z-index: 9999999;
-  transition: 1s linear;
+  z-index: 99999999;
+  transition: 3s linear;/*1s also*/
   opacity: 0;
 }
 
@@ -148,6 +149,7 @@ body {
   transition: 1s linear;
 }
 .master-play .vol .dot {
+  position: absolute;
   width: 5px;
   height: 5px;
   background: #36e2ec;
