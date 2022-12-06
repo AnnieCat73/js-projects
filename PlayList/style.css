@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  
+}
+
+h2 {
+  margin: 0;
+}
+
+
+/*Track List*/
+
+.track-list {
+  padding: 1.5rem;
+}
+.playlist-heading {
+  display: flex;
+  align-items: center;
+  
+  gap: 3em;
+}
+.table {
+  border-collapse: collapse;
+  font-size: var(--fs-330);
+  
+  margin-top: 1.5em;
+}
+
+.track {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  font-weight: var(--fw-600);
+}
+
+.album-img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.track-info {
+  display: inline-flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.track span {
+  display: block;
+  
+}
+
+.track-length {
+  
+}
+
+.track-time {
+  text-align: right;
+  padding: 1rem 0;
+}
+
+.track-time span {
+  
+}
+
+
+
+
+
+@media (min-width:33.125em) {
+  .table {
+    font-size: var(--fs-300);
+  }
+
+  .track-length {
+    font-size: var(--fs-310);
+  }
+
+  .track-time a {
+    padding-left: 2em;
+  }
+
+}
+
+
+/*Wave*/
+.wave {
+  width: 30px;
+  height: 30px;
+  /*border: 1px solid #fff;*/
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: flex-end;
+
+}
+
+.wave .wave1 {
+  width: 3px;
+  height: 10px;
+  margin-right: 3px;
+  border-radius: 10px 10px 0px 0px;
+  background: #e31b26;
+  animation: unset;
+}
+
+.wave .wave1:nth-child(2) {
+  height: 13px;
+  /*animation-delay: .4s;*/
+}
+
+.wave .wave1:nth-child(3) {
+  height: 8px;
+  /*animation-delay: .8s;*/
+}
+
+/*///*
