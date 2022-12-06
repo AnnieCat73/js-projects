@@ -8,176 +8,59 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="track-list">
-      <div class="playlist-heading">
-        <h2>Track List</h2>
-        <div class="wave">
-          <div class="wave1"></div>
-          <div class="wave1"></div>
-          <div class="wave1"></div>
+    <div class="container">
+      <section class="streaming">
+        <div class="playlist">
+          <div class="playlist-heading">
+            <h2>Playlist</h2>
+            <div class="wave">
+              <div class="wave1"></div>
+              <div class="wave1"></div>
+              <div class="wave1"></div>
+            </div>
+          </div>
+          <!--track list-->
+          <ul class="song-list">
+            <li
+              data-src="audio/Petrocelli.MP3"
+              data-name="Petrocelli"
+              data-index="0"
+            >
+              <span>01</span>
+              <a href="#"
+                ><img src="images/albumart.jpg" alt="" class="album-img"
+              /></a>
+              <span>Petrocelli</span>
+              <span>03.40</span>
+            </li>
+            <li
+              data-src="audio/Heavy Drinkers.MP3.MP3"
+              data-name="Heavy Drinkers"
+              data-index="1"
+            >
+              <span>02</span>
+              <a href="#"
+                ><img src="images/Expect.PNG" alt="" class="album-img"
+              /></a>
+
+              <span>Heavy Drinkers </span>
+              <span>04.19</span>
+            </li>
+            <li
+              data-src="audio/Our Roman Knows.mp3"
+              data-name="Our Roman Knows"
+              data-index="2"
+            >
+              <span>03</span>
+              <a href="#"
+                ><img src="images/albumart.jpg" alt="" class="album-img"
+              /></a>
+              <span>Our Roman Knows</span>
+              <span class="running-time">04.16</span>
+            </li>
+          </ul>
         </div>
-      </div>
-      
-      <table class="table">
-          <td class="track-no" width="30px">1</td>
-          
-          <td class="track p-table">
-            <a><img src="images/albumart.jpg" alt="Sand Apple" class="album-img"></a>
-            <audio
-              id="myAudio1"
-              src="/audio/Escapism - Yung Logos.mp3"
-              preload="auto"
-            ></audio>
-            <a class="track1">
-              <i class="fa fa-play"></i>
-              <!--<i class="fa-solid fa-pause"></i>-->
-            </a>
-            <div class="track-info">
-              Sand Apple
-              
-            </div>
-          </td>
-          <td class="track-time">
-            <span class="track-length p-table">3.15</span>
-          </td>
-        </tr>
-        
-        <tr>
-          <td class="track-no p-table" width="30px">2</td>
-          <td class="track p-table">
-           
-            <audio
-              id="myAudio2"
-              src="./audio/Fingerprint - Mini Vandals.mp3"
-            ></audio>
-            <a class="track2"><img src="" alt=""></a>
-            <div class="track-info">
-              The Small Things
-              <span>Conro</span>
-            </div>
-          </td>
-          <td class="track-time">
-            <span class="track-length p-table">3.35</span>
-            <a href="#">
-              <i class="fa fa-share-alt"></i>
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td class="track-no p-table" width="30px">3</td>
-          <td class="track p-table">
-            <audio
-              id="myAudio3"
-              src="./audio/Glass - Anno Domini Beats.mp3"
-            ></audio>
-            <a class="play" onClick="togglePlay3()">C</a>
-            <div class="track-info">
-              The Small Things
-              <span>Conro</span>
-            </div>
-          </td>
-          <td class="track-time">
-            <span class="track-length p-table">3.35</span>
-            <a href="#">
-              <i class="fa fa-share-alt"></i>
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td class="track-no p-table" width="30px">4</td>
-          <td class="track p-table">
-            <audio
-              id="myAudio4"
-              src="./audio/Kiss The Heavens - Asher Fulero.mp3"
-            ></audio>
-            <a class="play" onClick="togglePlay4()">D</a>
-            <div class="track-info">
-              The Small Things
-              <span>Conro</span>
-            </div>
-          </td>
-          <td class="track-time">
-            <span class="track-length p-table">3.35</span>
-            <a href="#">
-              <i class="fa fa-share-alt"></i>
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td class="track-no p-table" width="30px">5</td>
-          <td class="track p-table">
-            <audio id="myAudio5" src="./audio/Metro - Yung Logos.mp3"></audio>
-            <a class="play" onClick="togglePlay5()">E</a>
-            <div class="track-info">
-              The Small Things
-              <span>Conro</span>
-            </div>
-          </td>
-          <td class="track-time">
-            <span class="track-length p-table">3.35</span>
-            <a href="#">
-              <i class="fa fa-share-alt"></i>
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td class="track-no p-table" width="30px">6</td>
-          <td class="track p-table">
-            <audio
-              id="myAudio6"
-              src="./audio/No Doubt - Yung Logos.mp3"
-            ></audio>
-            <a class="play" onClick="togglePlay6()">F</a>
-            <div class="track-info">
-              The Small Things
-              <span>Conro</span>
-            </div>
-          </td>
-          <td class="track-time">
-            <span class="track-length p-table">3.35</span>
-            <a href="#">
-              <i class="fa fa-share-alt"></i>
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td class="track-no p-table" width="30px">7</td>
-          <td class="track p-table">
-            <audio
-              id="myAudio7"
-              src="./audio/Pray - Anno Domini Beats.mp3"
-            ></audio>
-            <a class="play" onClick="togglePlay7()">G</a>
-            <div class="track-info">
-              The Small Things
-              <span>Conro</span>
-            </div>
-          </td>
-          <td class="track-time">
-            <span class="track-length p-table">3.35</span>
-            <a href="#">
-              <i class="fa fa-share-alt"></i>
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td class="track-no p-table" width="30px">8</td>
-          <td class="track p-table">
-            <audio id="myAudio8" src="./audio/Retribution - NEFFEX.mp3"></audio>
-            <a class="play" onClick="togglePlay8()">H</a>
-            <div class="track-info">
-              The Small Things
-              <span>Conro</span>
-            </div>
-          </td>
-          <td class="track-time">
-            <span class="track-length p-table">3.35</span>
-            <a href="#">
-              <i class="fa fa-share-alt"></i>
-            </a>
-          </td>
-        </tr>
-      </table>
-    </section>
+      </section>
+    </div>
   </body>
 </html>
