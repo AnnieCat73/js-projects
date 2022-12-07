@@ -6,6 +6,7 @@ const songList = document.querySelector(".song-list");
 const title = document.querySelector("#title");
 const record = document.querySelector(".record");
 const volSlider = document.querySelector(".slider");
+console.log(audio);
 
 let songArray = [];
 let songHeading = "";

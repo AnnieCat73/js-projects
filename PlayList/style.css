@@ -4,7 +4,7 @@
 }
 
 body {
-  height: 100vh;
+ 
   
 }
 
@@ -27,6 +27,23 @@ h2 {
 
 
 /*/STREAMING//*/
+
+.section-heading {
+  display: flex;
+  gap: 2em;
+  position: relative;
+  padding: 1.5rem 0;
+}
+
+.section-heading::before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 18px;
+  background-color: #e31b26;
+  left: 0;
+  top: 0px;
+}
 
 /*Wave*/
 .wave {
@@ -80,8 +97,16 @@ h2 {
 
 .playlist .song-list {
   justify-content: space-between;
-  justify-content: space-between;
   list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 36em) and (max-width: 61em) {
+  .playlist .song-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
 }
 
 .playlist .song-list li {
@@ -102,3 +127,134 @@ h2 {
   font-weight: bold;
 }
 
+/*music player*/
+
+ .player {
+  background-color: #2b2b2b;
+  display: grid;
+  grid-template-columns: 1fr 10rem;
+  grid-template-rows: 1fr;
+  padding: 1.5rem 2.25rem;
+}
+
+.track-playing {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .5em;
+}
+
+.record {
+  width: 3rem;
+  border-radius: 50%;
+  margin-left: .3em
+}
+
+.record-animation {
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.controls-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8em;
+ 
+}
+.slidecontainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.slidecontainer i {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.slider {
+  -webkit-appearance: none;
+  cursor: pointer;
+  height: 8px;
+  background: #fff;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: 0.2;
+  border-radius: 20px;
+  margin: 0 1rem;
+  width: 100%;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controls > button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: none;
+  
+}
+
+.controls > button > i {
+  font-size: 1.1rem;
+  color: #f1f1f1;
+}
+
+.play-pause > i {
+  font-size: 1.5rem !important;
+}
+
+
+/*Albums*/
+
+.streaming .albums-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 1em;
+}
+
+.vinyl {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 1em;
+  justify-items: center;
+}
+
+.singles {
+  display: none;
+}
+
+@media (min-width: 36em) {
+  .vinyl {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 62em) {
+  .singles {
+    display: block;
+  }
+}
