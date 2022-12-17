@@ -5,16 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-    <link rel="stylesheet" href="form2.css" />
+    <link rel="stylesheet" href="form3.css" />
   </head>
   <body>
     <section id="contact" class="contact">
-      <div class="container"></div>
-      <div class="form-heading space-large">
-        <h2 class="section-title">Bookings</h2>
-        <p>For bookings and general enquiries please get in touch</p>
+      <div class="container">
+        <div class="form-container">
+          <div class="form-heading">
+            <h2>Bookings</h2>
+            <p>For bookings and general enquiries please get in touch</p>
+          </div>
+
+          <form name="contact-form">
+            <div class="form-control">
+              <label>Full Name</label>
+              <input name="name" placeholder="First and Last Name" />
+              <div class="error hide">Name is required</div>
+            </div>
+
+            <div class="form-control">
+              <label>Email</label>
+              <input name="email" placeholder="e.g. your_email@example.com" />
+              <div class="error hide">Email is invalid</div>
+            </div>
+
+            <div class="form-control">
+              <label>Message</label>
+              <textarea
+                name="message"
+                placeholder="Enter your message"
+                rows="8"
+              ></textarea>
+              <div class="error hide">Message is required</div>
+            </div>
+
+            <button class="submit-btn" type="submit">Submit Form</button>
+          </form>
+          <div class="thank-you hide">Thank you for your feedback!</div>
+        </div>
       </div>
-      <div class="form-container flow">
+
+      <!--<div class="form-container flow">
         <form
           name="contact-form"
           action="https://formsubmit.co/devannie777@gmail.com"
@@ -62,7 +93,7 @@
             <button type="submit">Submit Form</button>
           </div>
         </form>
-      </div>
+      </div>-->
     </section>
     <script src="script.js"></script>
   </body>
