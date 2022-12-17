@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+}
+
+
+/*Contact*/
+/*.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 40rem;
+}*/
+
+.contact .sub-heading {
+  margin-bottom: 0.5em;
+}
+
+/*.form-heading {
+  grid-column: 1 / -1;
+}
+
+.form-container {
+  grid-column: 1 / -1;
+}*/
+
+.contact .form-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+}
+
+.contact p:nth-of-type(2) {
+  margin-bottom: 0.8rem;
+}
+
+.contact form {
+  display: grid;
+  grid-template-rows: repeat(4, min-content);
+  gap: 2em;
+}
+
+/*.contact label {
+  display: block;
+  
+  margin-bottom: 0.5em;
+}*/
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.5em;
+}
+
+.form-group input {
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  padding: 0.5em 0.6em;
+  margin-bottom: 0.4rem;
+}
+/*
+.contact input,
+.contact textarea {
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  padding: 0.5em 0.6em;
+}*/
+
+.contact input:focus,
+.contact textarea:focus {
+  
+  outline: none;
+}
+
+.contact input::placeholder,
+textarea::placeholder {
+ color: #333;
+ font-size: 12px;
+}
+
+input.invalid {
+  border: 1px solid red;
+}
+
+.error-hint {
+  color: red;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.contact .send-btn {
+  justify-self: start;
+}
+
+.contact button {
+  display: inline-block;
+  background-color: darkred;
+  border: 0;
+ 
+  border-radius: 0.5em;
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  cursor: pointer;
+  
+  line-height: 1.125;
+  padding: 0.8em 1.5em;
+  transition: background-color 0.4s ease 0s;
+}
+
+.contact button:hover,
+.contact button:focus {
+  
+  color: var(--clr-accent-350);
+  border: 2px solid var(--clr-accent-350);
+  font-weight: var(--fw-800);
+}

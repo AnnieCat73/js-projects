@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="form2.css" />
+  </head>
+  <body>
+    <section id="contact" class="contact">
+      <div class="container"></div>
+      <div class="form-heading space-large">
+        <h2 class="section-title">Bookings</h2>
+        <p>For bookings and general enquiries please get in touch</p>
+      </div>
+      <div class="form-container flow">
+        <form
+          name="contact-form"
+          action="https://formsubmit.co/devannie777@gmail.com"
+          method="POST"
+        >
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_subject" value="New email wooo!" />
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input
+              class=""
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Your first and last name"
+            />
+            <div class="error-hint hide">Your name is required</div>
+          </div>
+          <div class="email-input">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="example@domain.com"
+              required
+            />
+          </div>
+          <input
+            type="hidden"
+            name="_next"
+            value="https://annie-indreiten.com/thankyou.html"
+          />
+          <div class="msg-input">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              rows="8"
+              name="message"
+              placeholder="Enter Your Message"
+              required
+            ></textarea>
+          </div>
+          <div class="send-btn">
+            <button type="submit">Submit Form</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
